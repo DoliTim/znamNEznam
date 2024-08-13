@@ -1,0 +1,220 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+  }.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    padding: 15px 100px
+  }
+  .logo span {
+    color: #f18100;
+  }
+  #menu-icon {
+    color: #f18100;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;}
+
+  .navbar {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -60rem;
+  left: 15px;
+  right: px;;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}.navbar.active {
+    top: 0;
+  }
+  .navbar a {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    display: block;
+    color: #fff;
+  }
+  .navbar a:hover {
+    background: #f89500;
+}
+ .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+  .side-bg {
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    right: 0;
+  }
+  .bg1 {
+    background: #f89500;
+}
+.bg2 {
+  background: #f89500;
+}
+.text {
+    flex: 1 1 17rem;
+    padding: 10px 100px;
+  }
+  /* Adjust .slide-img to cover the page width */
+.slide-img {
+    flex: 1 1 auto;    /* Allow flexibility */
+    z-index: 1;        /* Adjust layering if necessary */
+    width: 100%;       /* Full width */
+    height: auto;      /* Auto height to maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+    padding: 0%;        /* Remove padding to avoid white space */
+    margin: 0;         /* Remove margin if any */
+}
+
+.text h2 {
+    font-size: 3.7rem;
+    text-transform: none;
+  }
+  .text h1 {
+    font-size: 3.4rem;
+    text-transform: none;
+    padding:20px 0px; ;  
+  }
+  .text p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 2rem;
+  }
+  .btn {
+    padding: 0px 40px;
+    background:#f18100;
+    color: #ffffff;
+    display: flexbox;
+}
+.btn:hover {
+  letter-spacing: 1.7px;
+  transition: 0.7s;
+}
+.social {
+    background: #f18100;
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+body {
+    background-color: #1a1a1a;
+    color: #111111;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: visible; /* Prevent body from scrolling */
+}
+.review-slider {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.swiper-container {
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff; /* Light background for contrast */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.swiper-pagination {
+    margin-top: 10px;
+}
+/* Add this section to your existing style.css */
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+  margin-bottom: 1rem; /* Space below buttons */
+
+}
+
+.auth-buttons .btn {
+  padding: 10px 20px;
+  background: #f18100; /* Use the same color as other buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.auth-buttons .btn:hover {
+  background: #ff9900; /* Slightly lighter shade on hover */
+}
+
+/* Optional: Media query for smaller screens */
+@media (max-width: 600px) {
+  .auth-buttons {
+      flex-direction: column;
+  }
+  .search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px; /* Increase the gap value to add more space between the squares */
+    padding: 20px;
+}
+}

@@ -1,0 +1,436 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+  }.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    padding: 15px 100px
+  }
+  .logo span {
+    color: #f18100;
+  }
+  #menu-icon {
+    color: #f18100;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;}
+
+  .navbar {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -60rem;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}.navbar.active {
+    top: 0;
+  }
+  .navbar a {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    display: block;
+    color: #fff;
+  }
+  .navbar a:hover {
+    background: #f89500;
+}
+ .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+  .side-bg {
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    right: 0;
+  }
+  .bg1 {
+    background: #f89500;
+}
+.bg2 {
+  background: #f89500;
+}
+.text {
+    flex: 1 1 17rem;
+    padding: 10px 100px;
+  }
+  /* Adjust .slide-img to cover the page width */
+.slide-img {
+    flex: 1 1 auto;    /* Allow flexibility */
+    z-index: 1;        /* Adjust layering if necessary */
+    width: 100%;       /* Full width */
+    height: auto;      /* Auto height to maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+    padding: 0%;        /* Remove padding to avoid white space */
+    margin: 0;         /* Remove margin if any */
+}
+
+.text h2 {
+    font-size: 3.7rem;
+    text-transform: none;
+  }
+  .text h1 {
+    font-size: 3.4rem;
+    text-transform: none;
+    padding:20px 0px; ;  
+  }
+  .text p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 2rem;
+  }
+  .btn {
+    padding: 20px 0;
+    background: #141414;
+    color:  #f18100;
+    border: none;
+    /* Remove border-radius for a straight line */
+    text-align: center;
+    font-size: 2rem; /* Increase font size for visibility */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%; /* Full width */
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 40px;
+  
+}
+.btn:hover {
+  letter-spacing: 1.7px;
+  transition: 0.7s;
+}
+.social {
+    background: #f18100;
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+body {
+    background-color: #1a1a1a;
+    color: #111111;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: visible; /* Prevent body from scrolling */
+}
+.review-slider {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.swiper-container {
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff; /* Light background for contrast */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.swiper-pagination {
+    margin-top: 10px;
+}
+/* Add this section to your existing style.css */
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+  margin-bottom: 1rem; /* Space below buttons */
+
+}
+
+.auth-buttons .btn {
+  padding: 10px 20px;
+  background: #f18100; /* Use the same color as other buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.auth-buttons .btn:hover {
+  background: #ff9900; /* Slightly lighter shade on hover */
+}
+
+
+
+
+.orange-banner {
+    width: 100%;
+    background-color: #f18100;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Wrapper for the search forms */
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 30px; /* Increased gap for more breathing room */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Individual search containers */
+.search-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: #ffffff; /* White background for a clean look */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for a more polished look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Hover effect for the containers */
+.search-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Slight lift and shadow on hover */
+}
+
+/* Styling the labels */
+.search-bar label {
+  font-weight: bold;
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 8px;
+  font-size: 16px; /* Slightly larger font size */
+}
+
+/* Styling the input fields */
+.search-bar input[type="text"],
+.search-bar select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #FFA500; /* Orange border to match the theme */
+  outline: none;
+  font-size: 14px; /* Slightly larger text */
+  color: #333; /* Darker text color */
+  background: #f8f8f8; /* Light gray background */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input fields focus state */
+.search-bar input[type="text"]:focus,
+.search-bar select:focus {
+  border-color: #ff7a00; /* Darker orange on focus */
+  background-color: #fff; /* White background on focus */
+}
+
+/* Styling the buttons */
+.search-container button {
+  padding: 12px;
+  background-color: #ff7a00; /* Bright orange button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Button hover effect */
+.search-container button:hover {
+  background-color: #e66900; /* Slightly darker orange on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+/* Optional: Enhance the appearance of select dropdowns */
+.search-bar select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23e66900" d="M2 0L0 2h4z"/></svg>'); /* Custom dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+  .search-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+</style>
+</head>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #111;
+  margin: 0;
+  padding: 20px;
+}
+//* Container styles */
+.search-container {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, all 0.4s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search-container h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.container-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.search-form {
+  display: none;
+  opacity: 0;
+  transform: scale(0.95); /* Start smaller */
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.search-container:hover {
+  transform: scale(1.05); /* Slightly enlarge the container on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhance the shadow for a "lifted" effect */
+}
+
+.search-container:hover h3,
+.search-container:hover .container-description {
+  opacity: 0; /* Fade out the title and description */
+}
+
+.search-container:hover .search-form {
+  display: block;
+  opacity: 1;
+  transform: scale(1); /* Return to normal size */
+  margin-top: 20px; /* Adjust based on your layout */
+}
+
+.search-bar {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.search-bar label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.search-bar input, .search-bar select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #e66900;
+}
+
+/* Layout */
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
