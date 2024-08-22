@@ -1,0 +1,32 @@
+/* src/pages/Home.css */
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between; /* Keep the containers on their respective sides */
+  align-items: center; /* Center vertically */
+  height: calc(100vh - 50px); /* Slightly reduce the top margin from the top section */
+  gap: 30px;
+  padding: 20px;
+  padding-top: 70px; /* Adjust top padding to move containers higher */
+  box-sizing: border-box;
+  overflow: hidden; /* Hide overflow when a container expands */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .search-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    height: auto; /* Allow normal flow on smaller screens */
+    padding-top: 90px; /* Slightly reduce top padding on smaller screens */
+  }
+
+  .search-container {
+    flex: 1; /* Reset flex for mobile */
+    height: auto;
+  }
+
+  .search-container.expanded {
+    flex: 1; /* Reset expansion for mobile */
+  }
+}

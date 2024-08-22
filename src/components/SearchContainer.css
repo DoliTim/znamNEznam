@@ -1,0 +1,97 @@
+/* src/components/SearchContainer.css */
+
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease; /* Smooth transition */
+    height: 150px; /* Set initial height */
+  }
+  
+  /* Expansion behavior for Znam */
+  .search-container.expanded.left {
+    flex-grow: 1.5; /* Expands, but stays within the left half */
+    height: 100%; /* Take full height when expanded */
+    background: rgba(255, 255, 255, 0.2);
+    justify-content: flex-start; /* Align content to the start (left) */
+  }
+  
+  /* Expansion behavior for NEznam */
+  .search-container.expanded.right {
+    flex-grow: 1.5; /* Expands, but stays within the right half */
+    height: 100%; /* Take full height when expanded */
+    background: rgba(255, 255, 255, 0.2);
+    justify-content: flex-end; /* Align content to the end (right) */
+  }
+  
+  /* Title styling */
+  .short-title {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .orange-dot {
+    color: #ff7a00; /* Orange color for the dot */
+  }
+  
+  /* Form container styling */
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Make form fields take the full width */
+  }
+  
+  /* Each form field container */
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Input fields and select dropdowns */
+  .search-bar input,
+  .search-bar select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #FFA500; /* Orange border */
+    outline: none;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    color: #333; /* Text color */
+    width: 100%; /* Full width input */
+  }
+  
+  /* Buttons */
+  .search-form button {
+    padding: 12px;
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button */
+  }
+  
+  /* Button hover effect */
+  .search-form button:hover {
+    background-color: #e66900; /* Darker orange on hover */
+  }
+  
+  /* Adjustments for expanded form */
+  .search-container.expanded .search-form {
+    justify-content: center; /* Center the form content */
+    align-items: center; /* Center the form content */
+  }
+  
